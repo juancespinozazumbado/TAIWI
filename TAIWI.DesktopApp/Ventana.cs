@@ -15,9 +15,9 @@ namespace TAIWI.DesktopApp
         public TAIWI(RepositorioDeProductos Productos, RepositorioDeVentas Ventas)
         {
             this._repositorioDeVentas = Ventas; 
-            this._repositorioDeProductos = Productos;  
-            
-            ventaActual = new Venta();
+            this._repositorioDeProductos = Productos;
+
+            ventaActual = new Venta() { Cliente = "Cliente"};
 
             InitializeComponent();
 
@@ -99,7 +99,7 @@ namespace TAIWI.DesktopApp
         {
 
             _repositorioDeVentas.agregarUnaVenta(ventaActual);
-            ventaActual = new Venta();
+            ventaActual = new Venta() { Cliente = "Cliente" };
 
             SubtotalLabelText.Text = "0";
             TotalLabelText.Text = "0";

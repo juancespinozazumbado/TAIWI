@@ -73,24 +73,28 @@
             // 
             // ImprimirVentaBtn
             // 
+            this.ImprimirVentaBtn.BackColor = System.Drawing.Color.Black;
             this.ImprimirVentaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImprimirVentaBtn.ForeColor = System.Drawing.Color.White;
             this.ImprimirVentaBtn.Location = new System.Drawing.Point(693, 49);
             this.ImprimirVentaBtn.Name = "ImprimirVentaBtn";
             this.ImprimirVentaBtn.Size = new System.Drawing.Size(134, 37);
             this.ImprimirVentaBtn.TabIndex = 10;
             this.ImprimirVentaBtn.Text = "Imprimir";
-            this.ImprimirVentaBtn.UseVisualStyleBackColor = true;
+            this.ImprimirVentaBtn.UseVisualStyleBackColor = false;
             this.ImprimirVentaBtn.Click += new System.EventHandler(this.ImprimirVentaBtn_Click);
             // 
             // TerminarVentaBtn
             // 
+            this.TerminarVentaBtn.BackColor = System.Drawing.Color.Black;
             this.TerminarVentaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TerminarVentaBtn.ForeColor = System.Drawing.Color.White;
             this.TerminarVentaBtn.Location = new System.Drawing.Point(833, 50);
             this.TerminarVentaBtn.Name = "TerminarVentaBtn";
             this.TerminarVentaBtn.Size = new System.Drawing.Size(134, 37);
             this.TerminarVentaBtn.TabIndex = 9;
-            this.TerminarVentaBtn.Text = "Terminar";
-            this.TerminarVentaBtn.UseVisualStyleBackColor = true;
+            this.TerminarVentaBtn.Text = "Nueva";
+            this.TerminarVentaBtn.UseVisualStyleBackColor = false;
             this.TerminarVentaBtn.Click += new System.EventHandler(this.TerminarVentaBtn_Click);
             // 
             // PrecioTextBox
@@ -156,6 +160,7 @@
             // 
             // CantTextBox
             // 
+            this.CantTextBox.BackColor = System.Drawing.Color.White;
             this.CantTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CantTextBox.Location = new System.Drawing.Point(395, 50);
             this.CantTextBox.Name = "CantTextBox";
@@ -172,6 +177,7 @@
             // 
             // DetalleVentaDataGrid
             // 
+            this.DetalleVentaDataGrid.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,6 +191,7 @@
             this.DetalleVentaDataGrid.Location = new System.Drawing.Point(3, 3);
             this.DetalleVentaDataGrid.Name = "DetalleVentaDataGrid";
             this.DetalleVentaDataGrid.ReadOnly = true;
+            this.DetalleVentaDataGrid.RowHeadersVisible = false;
             this.DetalleVentaDataGrid.RowHeadersWidth = 62;
             this.DetalleVentaDataGrid.RowTemplate.Height = 28;
             this.DetalleVentaDataGrid.Size = new System.Drawing.Size(1113, 271);
@@ -268,6 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1143, 675);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

@@ -50,6 +50,32 @@ namespace TAIWI.BLL.CasosDeUso
                 Precio = 7000
 
             },
+              new Producto
+            {
+                Id = 100 +new Random().Next(1, 99) +00,
+                Nombre = "Cacique Ligado 1 L",
+                Precio = 8000
+
+            },new Producto
+            {
+                Id = 100 +new Random().Next(1, 99) +00,
+                Nombre = "Cacique  250 mL",
+                Precio = 7000
+
+            },new Producto
+            {
+                Id = 100 +new Random().Next(1, 99) +00,
+                Nombre = "Fanta Uva 600 mL",
+                Precio = 700
+
+            },
+              new Producto
+            {
+                Id = 100 +new Random().Next(1, 99) +00,
+                Nombre = "Galletas Chocolate 1200 g",
+                Precio = 2500
+
+            },
 
 
         };

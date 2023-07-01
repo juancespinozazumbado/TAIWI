@@ -8,7 +8,9 @@ namespace TAIWI.BLL.Modelos
 {
     public  class Venta
     {
-        public long Id { get; set; }    
+        public long Id { get; set; }   
+        
+        public string Cliente { get; set; }        
         public double SubTotal { get; set; }    
         public double Total { get; set; }   
 

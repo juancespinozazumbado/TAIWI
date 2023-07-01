@@ -20,8 +20,23 @@ namespace TAIWI.DesktopApp
 
             InitializeComponent();
 
-         
+
+            actualizarDatos();
             ActualizarDataSource();
+
+
+        }
+
+
+        public void actualizarDatos()
+        {
+            FechaLabelTxt.Text = ""+DateTime.Now.Day+"/"+DateTime.Now.Month +"/"+DateTime.Now.Year;
+            ClienteLabelText.Text = Venta.Cliente != null || Venta.Cliente != "" ? Venta.Cliente : "Cliente";
+            VentaIdLabelText.Text = Venta.Id.ToString();
+
+            SubTotalLabelText.Text=Venta.SubTotal.ToString();   
+            ImpuestoLabelText.Text= Venta.Impuesto.ToString();  
+            TotalLabelText.Text =Venta.Total.ToString();    
         }
 
 
@@ -34,15 +49,13 @@ namespace TAIWI.DesktopApp
                         Cant = i.Cantidad,
                         Precio = i.Producto.Precio,
                         SubTotal = i.Subtotal,
-                        Impuesto = i.Impuesto,
+                        Imp = i.Impuesto,
                         PrecioVenta = i.ToTal
                     }).ToList();
 
             DetalleVentaDataGrid.DataSource = DetallesDataSource;
         }
 
-
-
-       
+      
     }
 }
